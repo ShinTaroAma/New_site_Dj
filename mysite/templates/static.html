@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div style="padding: 20px; background-color: pink"> Extended template {{ show_id }}
+    {% if status %}
+        <span> Четное </span>
+    {% else %}
+        <span> Не четное </span>
+    {% endif %}</div>
+
+{% endblock %}
