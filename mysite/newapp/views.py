@@ -1,12 +1,8 @@
-from typing import Any
-
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 def main(request):
-    s = [i for i in range(0, 100)]
-    return render(request, 'index.html', {'time_now': s})
+    return render(request, 'index.html')
 
 
 def id_num(request, article_id, slug_text=''):
